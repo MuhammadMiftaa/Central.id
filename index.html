@@ -25,14 +25,42 @@
     </nav>
 
     <section class="hero">
-        <img src="assets/hero.jpg" class="hero-img" alt="">
-        <h1 class="title">Tidur Relax</h1>
+        <div class="hero-title">
+            <img src="assets/hero.jpg" class="hero-img" alt="">
+            <h1 class="text">Tidur Relax</h1>
+        </div>
+        
+        <div class="hero-bestseller">
+            <h1>OUR BEST SELLER</h1>
+            <p>Explore our hand-picked collection of the best in the world of well-ordered Spring Bed mattresses.</p>
+        </div>
+        <div class="hero-promo">
+            <img src="assets/hero1.jpg" class="hero-promo1" alt="">
+            <img src="assets/hero2.jpg" class="hero-promo2" alt="">
+        </div>
     </section>
 
 
 
     <script>
         feather.replace();
+    </script>
+
+    <script>
+        let prevScrollPos = window.pageYOffset;
+        const navbar = document.querySelector('.nav-container');
+
+        window.onscroll = function () {
+            const currentScrollPos = window.pageYOffset;
+
+            if (prevScrollPos > currentScrollPos) {
+                navbar.style.top = "0";
+            } else {
+                navbar.style.top = "-60px";
+            }
+
+            prevScrollPos = currentScrollPos;
+        };
     </script>
 </body>
 
