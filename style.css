@@ -5,17 +5,14 @@ body {
 
 /* NAVBAR */
 .nav-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  position: sticky;
   z-index: 999;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 1);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem 2rem;
-  /* background-color: turquoise; */
+  padding: 1.5rem 2rem;
+  transition: top 0.3s ease-in-out;
 }
 
 .nav-container .nav-logo {
@@ -81,14 +78,19 @@ input:focus {
 
 /* HERO */
 .hero{
-    position: relative;
+  padding: 0 1rem 1rem 1rem;
 }
 
-.hero .hero-img {
+.hero .hero-title{
+  position: relative;
+}
+
+.hero .hero-title .hero-img {
   width: 100%;
+  border-radius: 20px;
 }
 
-.hero .title{
+.hero .hero-title .text{
     display: block;
     position: absolute;
     right: 0;
@@ -99,4 +101,41 @@ input:focus {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.hero .hero-bestseller{
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 2.8rem;
+}
 
+.hero .hero-bestseller h1{
+  font-size: 3rem;
+  margin: 2rem 0 0 0;
+}
+
+.hero .hero-bestseller p{
+  margin: 0;
+  margin: .5rem 0 0 0;
+}
+
+.hero .hero-promo{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 99%;
+  
+}
+
+.hero .hero-promo .hero-promo1{
+  flex-basis: 60%;
+  max-width: 60%;
+  border-radius: 20px;
+}
+
+.hero .hero-promo .hero-promo2{
+  border-radius: 20px;
+  flex-basis: 40%;
+  max-width: 40%;
+  object-fit: cover;
+  object-position: right;
+}
