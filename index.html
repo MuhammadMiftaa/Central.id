@@ -6,7 +6,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Central</title>
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVBAR */
+.nav-container {
+  position: sticky;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  transition: top 0.3s ease-in-out;
+}
+
+.nav-container .nav-logo {
+  width: 50px;
+}
+
+.nav-container .nav-navbar {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-container .nav-navbar a {
+  text-decoration: none;
+  color: #333;
+  box-sizing: border-box;
+  border-bottom: 1.5px solid transparent;
+  font-size: 1.1rem;
+}
+
+.nav-container .nav-navbar a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid black;
+    transform: scale(0);
+    transition: 0.2s linear;
+}
+
+.nav-container .nav-navbar a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.nav-container .nav-search {
+  background-color: #eee;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.nav-container .nav-search:hover {
+  background-color: #ccc;
+}
+
+.nav-container .nav-search input {
+  border: none;
+  background: none;
+  font-size: 1rem;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
+
+.nav-container .nav-search a {
+  font-size: 1px;
+  color: #888;
+  text-decoration: none;
+  margin-bottom: 3px;
+}
+/* NAVBAR */
+
+/* HERO */
+.hero{
+  padding: 0 1rem 1rem 1rem;
+}
+
+.hero .hero-title{
+  position: relative;
+}
+
+.hero .hero-title .hero-img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.hero .hero-title .text{
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 5rem;
+    margin: 4rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero .hero-bestseller{
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 2.8rem;
+}
+
+.hero .hero-bestseller h1{
+  font-size: 3rem;
+  margin: 2rem 0 0 0;
+}
+
+.hero .hero-bestseller p{
+  margin: 0;
+  margin: .5rem 0 0 0;
+}
+
+.hero .hero-promo{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 99%;
+  
+}
+
+.hero .hero-promo .hero-promo1{
+  flex-basis: 60%;
+  max-width: 60%;
+  border-radius: 20px;
+}
+
+.hero .hero-promo .hero-promo2{
+  border-radius: 20px;
+  flex-basis: 40%;
+  max-width: 40%;
+  object-fit: cover;
+  object-position: right;
+}
+    </style>
 
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
