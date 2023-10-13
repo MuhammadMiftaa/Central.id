@@ -6,149 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Central</title>
 
-    <style>
-        body {
-  margin: 0;
-  padding: 0;
-}
-
-/* NAVBAR */
-.nav-container {
-  position: sticky;
-  z-index: 999;
-  background-color: rgba(255, 255, 255, 1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 2rem;
-  transition: top 0.3s ease-in-out;
-}
-
-.nav-container .nav-logo {
-  width: 50px;
-}
-
-.nav-container .nav-navbar {
-  display: flex;
-  gap: 2rem;
-}
-
-.nav-container .nav-navbar a {
-  text-decoration: none;
-  color: #333;
-  box-sizing: border-box;
-  border-bottom: 1.5px solid transparent;
-  font-size: 1.1rem;
-}
-
-.nav-container .nav-navbar a::after {
-    content: "";
-    display: block;
-    padding-bottom: 0.3rem;
-    border-bottom: 1px solid black;
-    transform: scale(0);
-    transition: 0.2s linear;
-}
-
-.nav-container .nav-navbar a:hover::after {
-    transform: scaleX(0.5);
-}
-
-.nav-container .nav-search {
-  background-color: #eee;
-  border-radius: 50px;
-  display: flex;
-  justify-content: space-between;
-  padding: 5px 10px;
-}
-
-.nav-container .nav-search:hover {
-  background-color: #ccc;
-}
-
-.nav-container .nav-search input {
-  border: none;
-  background: none;
-  font-size: 1rem;
-}
-
-input:focus {
-  border: none;
-  outline: none;
-}
-
-.nav-container .nav-search a {
-  font-size: 1px;
-  color: #888;
-  text-decoration: none;
-  margin-bottom: 3px;
-}
-/* NAVBAR */
-
-/* HERO */
-.hero{
-  padding: 0 1rem 1rem 1rem;
-}
-
-.hero .hero-title{
-  position: relative;
-}
-
-.hero .hero-title .hero-img {
-  width: 100%;
-  border-radius: 20px;
-}
-
-.hero .hero-title .text{
-    display: block;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    font-size: 5rem;
-    margin: 4rem;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.hero .hero-bestseller{
-  text-align: center;
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 2.8rem;
-}
-
-.hero .hero-bestseller h1{
-  font-size: 3rem;
-  margin: 2rem 0 0 0;
-}
-
-.hero .hero-bestseller p{
-  margin: 0;
-  margin: .5rem 0 0 0;
-}
-
-.hero .hero-promo{
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  width: 99%;
-  
-}
-
-.hero .hero-promo .hero-promo1{
-  flex-basis: 60%;
-  max-width: 60%;
-  border-radius: 20px;
-}
-
-.hero .hero-promo .hero-promo2{
-  border-radius: 20px;
-  flex-basis: 40%;
-  max-width: 40%;
-  object-fit: cover;
-  object-position: right;
-}
-    </style>
+    <link rel="stylesheet" href="style.css">
 
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
@@ -157,8 +15,8 @@ input:focus {
     <nav class="nav-container">
         <img src="assets/logo.png" class="nav-logo" alt="">
         <div class="nav-navbar">
-            <a href="#home">Home</a><a href="#features">Features</a><a href="#products">Products</a><a
-                href="#catalogs">Catalogs</a><a href="#contact">Contact</a>
+            <a href="#hero">Home</a><a href="#categories">Categories</a><a href="#product">Products</a><a
+                href="#contact">Contact</a><a href="#about">About</a>
         </div>
         <div class="nav-search">
             <input type="text" placeholder="Search...">
@@ -166,44 +24,238 @@ input:focus {
         </div>
     </nav>
 
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero-title">
             <img src="assets/hero.jpg" class="hero-img" alt="">
             <h1 class="text">Tidur Relax</h1>
         </div>
-        
+
         <div class="hero-bestseller">
             <h1>OUR BEST SELLER</h1>
             <p>Explore our hand-picked collection of the best in the world of well-ordered Spring Bed mattresses.</p>
         </div>
         <div class="hero-promo">
-            <img src="assets/hero1.jpg" class="hero-promo1" alt="">
-            <img src="assets/hero2.jpg" class="hero-promo2" alt="">
+            <div class="hero-promo1">
+                <img src="assets/hero1.png" class="hero-promo1-img" alt="">
+                <div class="hero-promo1-detail">
+                    <h2>Rest your body</h2>
+                    <p>Experience great quality sleep with our best Spring Bed products.</p>
+                    <div class="shopnow">
+                        <h3>SHOP NOW →</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-promo2">
+                <img src="assets/hero2.png" class="hero-promo2-img" alt="">
+                <div class="hero-promo2-detail">
+                    <p>Dream in Comfort.</p>
+                    <h2>GO TO FEATURES</h2>
+                </div>
+            </div>
+    </section>
+
+    <section class="categories" id="categories">
+        <div class="categories-title">
+            <h3 class="categories-title-2"><span>CENTRAL</span> BEST SELLER</h3>
+        </div>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="assets/cat1.png" alt="Image 1">
+                    <h3>Dominiq Pocket Spring – Central Spring Bed</h3>
+                </div>
+                <div class="slide">
+                    <img src="assets/cat2.png" alt="Image 2">
+                    <h3>Deluxe Plus Pocket Springs – Central Springbed </h3>
+                </div>
+                <div class="slide">
+                    <img src="assets/cat3.png" alt="Image 3">
+                    <h3>Imperium Pocket Spring – Central Spring Bed</h3>
+                </div>
+                <div class="slide">
+                    <img src="assets/cat4.png" alt="Image 4">
+                    <h3>Dangdut – Central Foam</h3>
+                </div>
+            </div>
         </div>
     </section>
 
+    <section class="product" id="product">
+        <div class="product-title">
+            <p class="product-title-1">Sleep Like Royalty</p>
+            <h3 class="product-title-2">ALL PRODUCT</h3>
+            <p class="product-title-3">Elevating Your Sleep Experience</p>
+        </div>
+        <div class="product-container">
+            <h4 class="product-container-title">Aristocrate</h4>
+            <div class="row">
+                <div class="product-card">
+                    <img src="assets/B1.png" alt="" class="product-card-img">
+                    <p class="product-card-type">Type Aristocrate</p>
+                    <h3 class="product-card-title">Grand Raffles</h3>
+                    <a href="#" class="product-detail"><i data-feather="eye" class="product-detail"></i></a>
+                </div>
+                <div class="product-card">
+                    <img src="assets/B2.png" alt="" class="product-card-img">
+                    <p class="product-card-type">Type Aristocrate</p>
+                    <h3 class="product-card-title">King Arthur</h3>
+                    <a href="#" class="product-detail"><i data-feather="eye" class="product-detail"></i></a>
+                </div>
+                <div class="product-card">
+                    <img src="assets/B3.png" alt="" class="product-card-img">
+                    <p class="product-card-type">Type Aristocrate</p>
+                    <h3 class="product-card-title">Madeline</h3>
+                    <a href="#" class="product-detail"><i data-feather="eye" class="product-detail"></i></a>
+                </div>
+                <div class="product-card">
+                    <img src="assets/B4.png" alt="" class="product-card-img">
+                    <p class="product-card-type">Type Aristocrate</p>
+                    <h3 class="product-card-title">Queen Elisabeth</h3>
+                    <a href="#" class="product-detail"><i data-feather="eye" class="product-detail"></i></a>
+                </div>
+                <div class="product-card">
+                    <img src="assets/B5.png" alt="" class="product-card-img">
+                    <p class="product-card-type">Type Aristocrate</p>
+                    <h3 class="product-card-title">Cordovan</h3>
+                    <a href="#" class="product-detail"><i data-feather="eye" class="product-detail"></i></a>
+                </div>
+                <div class="product-card">
+                    <img src="assets/B6.png" alt="" class="product-card-img">
+                    <p class="product-card-type">Type Aristocrate</p>
+                    <h3 class="product-card-title">Alexander</h3>
+                    <a href="#" class="product-detail"><i data-feather="eye" class="product-detail"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <h4 class="product-container-title">Gold</h4>
+            <div class="row">
+                <div class="product-card">
+                    <img src="assets/C1.png" alt="" class="product-card-img">
+                    <p class="product-card-type">Type Gold</p>
+                    <h3 class="product-card-title">Blue Saphire</h3>
+                    <a href="#" class="product-detail"><i data-feather="eye" class="product-detail"></i></a>
+                </div>
+                <div class="product-card">
+                    <img src="assets/C2.png" alt="" class="product-card-img">
+                    <p class="product-card-type">Type Gold</p>
+                    <h3 class="product-card-title">Red Ruby</h3>
+                    <a href="#" class="product-detail"><i data-feather="eye" class="product-detail"></i></a>
+                </div>
+                <div class="product-card">
+                    <img src="assets/C3.png" alt="" class="product-card-img">
+                    <p class="product-card-type">Type Gold</p>
+                    <h3 class="product-card-title">Black Diamond</h3>
+                    <a href="#" class="product-detail"><i data-feather="eye" class="product-detail"></i></a>
+                </div>
+                <div class="product-card">
+                    <img src="assets/C4.png" alt="" class="product-card-img">
+                    <p class="product-card-type">Type Gold</p>
+                    <h3 class="product-card-title">Titanium</h3>
+                    <a href="#" class="product-detail"><i data-feather="eye" class="product-detail"></i></a>
+                </div>
+                <div class="product-card">
+                    <img src="assets/C5.png" alt="" class="product-card-img">
+                    <p class="product-card-type">Type Gold</p>
+                    <h3 class="product-card-title">Platinum</h3>
+                    <a href="#" class="product-detail"><i data-feather="eye" class="product-detail"></i></a>
+                </div>
+                <div class="product-card">
+                    <img src="assets/C6.png" alt="" class="product-card-img">
+                    <p class="product-card-type">Type Gold</p>
+                    <h3 class="product-card-title">Gold</h3>
+                    <a href="#" class="product-detail"><i data-feather="eye" class="product-detail"></i></a>
+                </div>
+                <div class="product-card">
+                    <img src="assets/C7.png" alt="" class="product-card-img">
+                    <p class="product-card-type">Type Gold</p>
+                    <h3 class="product-card-title">Gold 2 in 1</h3>
+                    <a href="#" class="product-detail"><i data-feather="eye" class="product-detail"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <h4 class="product-container-title">Silver</h4>
+            <div class="row">
+                <div class="product-card">
+                    <img src="assets/D1.png" alt="" class="product-card-img">
+                    <p class="product-card-type">Type Silver</p>
+                    <h3 class="product-card-title">Scarllet</h3>
+                    <a href="#" class="product-detail"><i data-feather="eye" class="product-detail"></i></a>
+                </div>
+                <div class="product-card">
+                    <img src="assets/D2.png" alt="" class="product-card-img">
+                    <p class="product-card-type">Type Silver</p>
+                    <h3 class="product-card-title">Silver</h3>
+                    <a href="#" class="product-detail"><i data-feather="eye" class="product-detail"></i></a>
+                </div>
+                <div class="product-card">
+                    <img src="assets/D3.png" alt="" class="product-card-img">
+                    <p class="product-card-type">Type Silver</p>
+                    <h3 class="product-card-title">Millenia</h3>
+                    <a href="#" class="product-detail"><i data-feather="eye" class="product-detail"></i></a>
+                </div>
+                <div class="product-card">
+                    <img src="assets/D4.png" alt="" class="product-card-img">
+                    <p class="product-card-type">Type Silver</p>
+                    <h3 class="product-card-title">Scarllet 2 in 1</h3>
+                    <a href="#" class="product-detail"><i data-feather="eye" class="product-detail"></i></a>
+                </div>
+                <div class="product-card">
+                    <img src="assets/D5.png" alt="" class="product-card-img">
+                    <p class="product-card-type">Type Silver</p>
+                    <h3 class="product-card-title">Sporty</h3>
+                    <a href="#" class="product-detail"><i data-feather="eye" class="product-detail"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="award">
+        <h2 class="award-title">Making History with Our Top Awards in Our Field</h2>
+        <img src="assets/award.jpg" alt="">
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-title">
+            <h2><span>Contact</span> Us</h2>
+            <p>Your feedback is important to us. Please fill in the fields below and select a subject<br> from the pull-down
+                menu for specific questions about and existing order.</p>
+        </div>
+        <div class="row">
+            <form action="">
+                <div class="input-group">
+                    <i data-feather="user"></i>
+                    <input type="text" placeholder="Your Name">
+                </div>
+                <div class="input-group">
+                    <i data-feather="mail"></i>
+                    <input type="text" placeholder="Your Email">
+                </div>
+                <div class="input-group">
+                    <i data-feather="phone"></i>
+                    <input type="text" placeholder="Your Number">
+                </div>
+                <div class="input-group">
+                    <i data-feather="message-square"></i>
+                    <textarea id="textarea" cols="30" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <img src="assets/about.png" alt="" class="about-img">
+        <p class="about-text">Established in 1992 as a manufacturing company and producing spring bed, furniture and foam, CENTRAL is one of registered trade mark name. Central Spring Bed Mattresses are masterfully engineered to incorporate cutting edge technologies at an impeccably precise lavel, Design to seamlessly adapt to your physique, form, weight and skin temperature and other characteristics, each mattress is an elegant testimony to the evolution of sleeping perfection.
+            We are on a mission to make our furniture, your style.</p>
+    </section>
 
     <script>
         feather.replace();
     </script>
 
-    <script>
-        let prevScrollPos = window.pageYOffset;
-        const navbar = document.querySelector('.nav-container');
-
-        window.onscroll = function () {
-            const currentScrollPos = window.pageYOffset;
-
-            if (prevScrollPos > currentScrollPos) {
-                navbar.style.top = "0";
-            } else {
-                navbar.style.top = "-60px";
-            }
-
-            prevScrollPos = currentScrollPos;
-        };
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
