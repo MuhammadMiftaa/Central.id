@@ -29,7 +29,7 @@ function nextSlide() {
 }
 
 function updateSlider() {
-    const translateX = -currentIndex * 102;
+    const translateX = -currentIndex * 100;
     slider.style.transform = `translateX(${translateX}%)`;
 }
 
@@ -40,3 +40,20 @@ slider.addEventListener('mouseenter', () => {
 });
 
 slider.addEventListener('mouseleave', startSlide);
+
+const modalBoxes = document.querySelectorAll('.modal');
+const modalContainer = document.querySelector('.modal-container');
+document.addEventListener('click', function (e) {
+    modalBoxes.forEach(function (modalBox, index) {
+        if (e.target.classList.contains('product-detail') && (e.target.parentElement.classList.contains(index + 1) || e.target.parentElement.parentElement.classList.contains(index + 1))) {
+            modalBox.classList.add('active');
+            e.preventDefault();
+        }
+    });
+    if (e.target.classList.contains('modal') || e.target.classList.contains('x')) {
+        modalBoxes.forEach(function (modalBox) {
+            modalBox.classList.remove('active')
+            e.preventDefault();
+        });
+    }
+})
