@@ -439,6 +439,10 @@ input:focus {
 /* AWARD */
 
 /* CONTACT */
+.contact{
+  margin-bottom: 7rem;
+}
+
 .contact .contact-title{
   padding-top: 2rem;
   width: 100%;
@@ -468,7 +472,7 @@ input:focus {
 .contact .row form .input-group {
   display: flex;
   align-items: center;
-  border: 1px solid #ddd;
+  border: 1px solid black;
   border-radius: 4px;
   margin-top: 1.5rem;
   padding-left: 2rem;
@@ -523,3 +527,110 @@ input:focus {
   text-align: justify;
 }
 /* ABOUT */
+
+/* FOOTER */
+.footer{
+  background-color: #111;
+  color: #fff;
+  padding: 2.5rem 2.5rem 1rem 2.5rem;
+}
+
+.footer .footer-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .footer-container .footer-container-menu{
+  flex-basis: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.footer .footer-container .footer-container-menu .menu{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .footer-container .footer-container-menu .menu .menu-title{
+  color: #fff;
+  text-decoration: none;
+  margin: 0;
+  padding-bottom: 1rem;
+  font-size: .8rem;
+  font-weight: 800;
+}
+
+.footer .footer-container .footer-container-menu .menu-product a{
+  font-size: .8rem;
+  margin: 0;
+  padding-bottom: .7rem;
+  color: #7e7e7e;
+  text-decoration: none;
+  transition: .1s;
+}
+
+.footer .footer-container .footer-container-menu .menu-product a:hover{
+  color: #fff;
+}
+
+.footer .footer-container .footer-container-links{
+  position: relative;
+}
+
+.footer .footer-container .footer-container-links .links{
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.footer .footer-container .footer-container-links .links a{
+  color: #111;
+  width: 2rem;
+  height: 2rem;
+  background-color: #7e7e7e;
+  display: flex;
+  justify-content: center;
+  align-items: center;;
+  border-radius: 50%;
+  transition: .3s;
+}
+
+.footer .footer-container .footer-container-links .links .link{
+  width: 1.2rem;
+}
+
+.footer .footer-container .footer-container-links .links a:hover{
+  background-color: #efefef;
+}
+
+.footer .footer-end{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .footer-end .footer-loc{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: .8rem;
+}
+
+.footer .footer-end .footer-loc .map{
+  font-size: .5px;
+  width: 1rem;
+}
+
+.footer .footer-end .footer-loc p{
+  font-size: .8rem;
+  margin: 0;
+}
+
+.footer .footer-end .footer-copyright{
+  font-size: .8rem;
+  margin: 0;
+  color: #7e7e7e;
+}
+/* FOOTER */
