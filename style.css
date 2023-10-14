@@ -8,6 +8,21 @@
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: "title";
+  src: url("font/adineue-PRO-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "bold";
+  src: url("font/Corporate\ A\ Bold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "light";
+  src: url("font/Corporate\ A\ Light.ttf") format("truetype");
+}
+
 span{
   color: darkblue;
 }
@@ -22,6 +37,7 @@ span{
   align-items: center;
   padding: 1.5rem 2rem;
   transition: top 0.3s ease-in-out;
+  
 }
 
 .nav-container .nav-logo {
@@ -39,6 +55,7 @@ span{
   box-sizing: border-box;
   border-bottom: 1.5px solid transparent;
   font-size: 1.1rem;
+  font-family: "light", serif;
 }
 
 .nav-container .nav-navbar a::after {
@@ -70,6 +87,7 @@ span{
   border: none;
   background: none;
   font-size: 1rem;
+  font-family: "light", serif;
 }
 
 input:focus {
@@ -92,6 +110,7 @@ input:focus {
 
 .hero .hero-title {
   position: relative;
+  font-family: "title", sans-serif;
 }
 
 .hero .hero-title .hero-img {
@@ -120,11 +139,13 @@ input:focus {
 .hero .hero-bestseller h1 {
   font-size: 3rem;
   margin: 2rem 0 0 0;
+  font-family: "title", sans-serif;
 }
 
 .hero .hero-bestseller p {
   margin: 0;
-  margin: 0.5rem 0 0 0;
+  margin: 0.3rem 0 0 0;
+  font-family: "light", serif;
 }
 
 .hero .hero-promo {
@@ -160,11 +181,13 @@ input:focus {
 .hero .hero-promo .hero-promo1 .hero-promo1-detail h2 {
   font-size: 3rem;
   margin: 0;
+  font-family: "title", sans-serif;
 }
 
 .hero .hero-promo .hero-promo1 .hero-promo1-detail p {
-  margin: 0.5rem 0;
+  margin: .3rem 0 .8rem 0;
   font-size: 1rem;
+  font-family: "light", serif;
 }
 
 .hero .hero-promo .hero-promo1 .hero-promo1-detail .shopnow {
@@ -184,6 +207,7 @@ input:focus {
   color: black;
   font-weight: 100;
   font-size: 1rem;
+  font-family: "bold", serif;
 }
 
 .hero .hero-promo .hero-promo2 {
@@ -211,10 +235,16 @@ input:focus {
   margin-right: 2rem;
 }
 
-.hero .hero-promo .hero-promo2 .hero-promo2-detail p,
 .hero .hero-promo .hero-promo2 .hero-promo2-detail h2 {
   color: white;
   margin: 0.4rem;
+  font-family: "title", sans-serif;
+}
+
+.hero .hero-promo .hero-promo2 .hero-promo2-detail p{
+  color: white;
+  margin: 0.4rem;
+  font-family: "light", serif;
 }
 
 .hero .hero-promo .hero-promo2 .hero-promo2-detail::before {
@@ -270,27 +300,20 @@ input:focus {
   text-align: center;
 }
 
-.bestseller .bestseller-title .bestseller-title-1 {
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 500;
-  margin-bottom: 0.2rem;
-}
-
-.bestseller .bestseller-title .bestseller-title-2 {
+.bestseller .bestseller-title .bestseller-title-text {
+  font-family: "title", sans-serif;
   margin: 0;
   font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
 .bestseller .bestseller-title .bestseller-desc {
   margin: 0;
   font-size: 0.8rem;
   font-weight: 100;
-  font-style: italic;
+  font-family: "light", serif;
 }
-/* BEST SELLER */
 
 /* SLIDER */
 .slider-container {
@@ -327,6 +350,7 @@ input:focus {
   color: #ccc;
   padding: 10px;
   width: auto;
+  font-family: "bold", serif;
 }
 /* SLIDER */
 /* BEST SELLER */
@@ -347,20 +371,21 @@ input:focus {
   font-size: 1rem;
   font-weight: 500;
   margin-bottom: 0.2rem;
+  font-family: "bold", serif;
 }
 
 .product .product-title .product-title-2 {
   margin: 0;
   font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  font-family: "title", sans-serif;
 }
 
 .product .product-title .product-title-3 {
   margin: 0;
   font-size: 0.8rem;
   font-weight: 100;
-  font-style: italic;
+  font-family: "light", serif;
 }
 
 .product .product-container {
@@ -372,6 +397,7 @@ input:focus {
   display: inline-block;
   margin-bottom: 1.8rem;
   margin-left: 2rem;
+  font-family: "title", sans-serif;
 }
 
 .product .product-container .row {
@@ -398,19 +424,22 @@ input:focus {
 
 .product .product-container .row .product-card .product-card-type {
   color: #888;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-top: 0.8rem;
   margin-bottom: 1rem;
   margin: 0.5rem 0 0.9rem 0;
   padding: 0 0.5rem;
+  font-family: "light", serif;
+  word-spacing: 3px;
 }
 
 .product .product-container .row .product-card .product-card-title {
   font-weight: lighter;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 0;
   text-transform: uppercase;
   padding: 0 0.5rem;
+  font-family: "bold", serif;
 }
 
 .product .product-container .row .product-card a.product-detail {
@@ -450,10 +479,12 @@ input:focus {
   font-size: 3rem;
   margin: 0;
   margin-bottom: 1rem;
+  font-family: "title", sans-serif;
 }
 
 .contact .contact-title p {
   font-size: 1rem;
+  font-family: "light", serif;
 }
 
 .contact .row {
@@ -477,6 +508,7 @@ input:focus {
 
 .contact .row form .input-group input,
 .contact .row form .input-group textarea {
+  font-family: "light", serif;
   width: 100%;
   background: none;
   padding: 1.5rem;
@@ -501,6 +533,7 @@ input:focus {
   cursor: pointer;
   border: 1px solid black;
   transition: .3s;
+  font-family: "bold", serif;
 }
 
 .btn:hover {
@@ -511,7 +544,7 @@ input:focus {
 
 /* ABOUT */
 .about {
-  padding: 3rem 5rem;
+  padding: 3.5rem 5rem;
   background-color: #ebedee;
   display: flex;
   align-items: center;
@@ -525,6 +558,7 @@ input:focus {
 .about .about-text {
   font-size: 1rem;
   text-align: justify;
+  font-family: "light", serif;
 }
 /* ABOUT */
 
@@ -559,10 +593,12 @@ input:focus {
   padding-bottom: 1rem;
   font-size: 0.8rem;
   font-weight: 800;
+  font-family: "title", sans-serif;
 }
 
 .footer .footer-container .footer-container-menu .menu-product a {
   font-size: 0.8rem;
+  font-family: "light", serif;
   margin: 0;
   padding-bottom: 0.7rem;
   color: #7e7e7e;
@@ -626,9 +662,11 @@ input:focus {
 .footer .footer-end .footer-loc p {
   font-size: 0.8rem;
   margin: 0;
+  font-family: "title", sans-serif;
 }
 
 .footer .footer-end .footer-copyright {
+  font-family: "light", serif;
   font-size: 0.8rem;
   margin: 0;
   color: #7e7e7e;
