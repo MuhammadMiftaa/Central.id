@@ -454,6 +454,7 @@ input:focus {
   justify-content: center;
   align-items: center;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .product .product-container .row .product-card a.product-detail:hover {
