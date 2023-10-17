@@ -417,7 +417,7 @@ input:focus {
 }
 
 .product .product-container .row .product-card .product-card-img {
-  width: 100%;
+  width: 90%;
   overflow: hidden;
 }
 
