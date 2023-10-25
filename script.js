@@ -13,6 +13,47 @@ window.onscroll = function () {
     prevScrollPos = currentScrollPos;
 };
 
+const hero = document.getElementById('heroNav');
+const bestseller = document.getElementById('bestsellerNav');
+const product = document.getElementById('productNav');
+const contact = document.getElementById('contactNav');
+const about = document.getElementById('aboutNav');
+hero.addEventListener('click', function(){
+    hero.classList.add('active')
+    bestseller.classList.remove('active')
+    product.classList.remove('active')
+    contact.classList.remove('active')
+    about.classList.remove('active')
+})
+bestseller.addEventListener('click', function(){
+    bestseller.classList.add('active')
+    hero.classList.remove('active')
+    product.classList.remove('active')
+    contact.classList.remove('active')
+    about.classList.remove('active')
+})
+product.addEventListener('click', function(){
+    product.classList.add('active')
+    bestseller.classList.remove('active')
+    hero.classList.remove('active')
+    contact.classList.remove('active')
+    about.classList.remove('active')
+})
+contact.addEventListener('click', function(){
+    contact.classList.add('active')
+    bestseller.classList.remove('active')
+    product.classList.remove('active')
+    hero.classList.remove('active')
+    about.classList.remove('active')
+})
+about.addEventListener('click', function(){
+    about.classList.add('active')
+    bestseller.classList.remove('active')
+    product.classList.remove('active')
+    contact.classList.remove('active')
+    hero.classList.remove('active')
+})
+
 const slider = document.querySelector('.slider');
 const images = document.querySelectorAll('.slider img');
 
