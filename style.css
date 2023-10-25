@@ -417,7 +417,7 @@ input:focus {
 }
 
 .product .product-container .row .product-card .product-card-img {
-  width: 90%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -679,7 +679,7 @@ input:focus {
   z-index: 999;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, .8);
   top: 0;
   left: 0;
   overflow: auto;
